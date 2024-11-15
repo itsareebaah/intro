@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mdb.css">
+    <style>
+        .no1 {
+            
+            background-color: pink;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .breadcrumb-item a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        
+        .breadcrumb-item a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            background-color: rgba(165, 42, 42, 0.337);
+            text-align: center;
+            padding: 10px;
+        }
+
+        .list-group-item {
+            margin-bottom: 20px;
+        }
+
+        .progress {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <script src="bootstrapjs.js"></script>
+    <script src="jquery.js"></script>
+    <script src="popper.js"></script>
+    <script src="mdbjs.js"></script>
+
+    <div class="no1">
+        <div class="container">
+            <!-- Breadcrumb -->
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">HOME</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">SKILLS</li>
+                </ol>
+            </nav>
+
+            <!-- Title -->
+            <h1>Technical Skills</h1>
+
+            <!-- Skills Section -->
+            <div class="list-group">
+                <!-- HTML Skill -->
+                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">HTML</h5>
+                    </div>
+                    <p class="mb-1">
+                        I started learning HTML back in July from YouTube. I enjoyed the learning process. 
+                        I made several websites, which you can see in my project section, and I have a quite good command of HTML.
+                    </p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </a>
+
+                <!-- CSS Skill -->
+                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">CSS</h5>
+                    </div>
+                    <p class="mb-1">
+                        I also learned CSS in July and August from YouTube. I learned many concepts and made a clone of Amazon using HTML and CSS.
+                    </p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </a>
+
+                <!-- JavaScript Skill -->
+                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">JavaScript</h5>
+                    </div>
+                    <p class="mb-1">
+                        I took an overview of JavaScript in my web engineering classes. I don't have much grip on JavaScript 
+                        and have not made any projects using JavaScript yet.
+                    </p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <small class="text-muted">Check my project section to see my skills.</small>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

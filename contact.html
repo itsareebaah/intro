@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mdb.css">
+    <style>
+        .no1 {
+          height: 100%;
+            background-color: pink;
+            padding: 20px 0;
+        }
+       
+        .form-container {
+            max-width: 500px;
+            margin: 0 auto;
+            height: 450px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        
+          h1 {
+            background-color: rgba(165, 42, 42, 0.337);
+            text-align: center;
+            padding: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+   
+        
+    <div class="no1">
+        <nav aria-label="breadcrumb" style="margin-left: 20px; margin-right: 20px; border-radius: 30px;">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a style="color:rgb(59, 12, 58);" href="index.html">HOME</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Project</li>
+            </ol>
+        <h1 class="text-center" >Contact Us</h1>
+        <div class="form-container">
+            <form name="f1" onsubmit="return validateName()">
+                <div class="form-group">
+                    <label for="inputName" class="font-weight-bold">Full Name</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="Full Name">
+                </div>
+
+                <div class="form-group">
+                    <label for="inputEmail4" class="font-weight-bold">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1" class="font-weight-bold">Write message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write something..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">Message</button>
+            </form>
+        </div>
+        <script>
+          function validateName() {
+        var name = document.getElementById("inputName").value; // Get the name value using getElementById
+       
+
+        if (name.length < 5) {
+            alert("The name must be at least 5 words long.");
+            return false; // Prevent form submission
+        }
+        return true; // Allow form submission
+    }
+        </script>
+  
+    <script src="bootstrapjs.js"></script>
+    <script src="jquery.js"></script>
+    <script src="popper.js"></script>
+    <script src="mdbjs.js"></script>
+    </div>
+</body>
+</html>

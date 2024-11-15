@@ -1,0 +1,138 @@
+/* Default Styles for the .no1 section */
+.no1 {
+  height: 475.5px;
+  width: 1260px;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(gurl.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#ho {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: right;
+  color: rgb(59, 12, 58);
+  padding-top: 20px;
+  padding-right: 20px;
+  font-size: 62px;
+}
+
+#p1 {
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(59, 12, 58);
+  text-align: center;
+  padding-left: 900px;
+  font-size: 16px;
+}
+
+/* Media Queries for responsive design */
+
+/* For screens 1231px or smaller (Tablets/Desktops) */
+@media (max-width: 1231px) {
+  .no1 {
+    width: 100%; /* Full width */
+  }
+
+  #ho {
+    font-size: 28px;
+    text-align: left;
+    padding-right: 10px;
+  }
+
+  #p1 {
+    font-size: 20px;
+    padding-left: 20px;
+  }
+}
+
+/* For screens 992px or smaller (Tablets) */
+@media (max-width: 992px) {
+  .no1 {
+    height: 400px;
+  }
+
+  #ho {
+    font-size: 40px;
+    text-align: center;
+    padding-right: 0;
+  }
+
+  #p1 {
+    font-size: 18px;
+    text-align: center;
+    padding-left: 0;
+  }
+}
+
+/* For screens 768px or smaller (Smaller Tablets and Large Mobiles) */
+@media (max-width: 768px) {
+  .no1 {
+    height: 350px;
+  }
+
+  #ho {
+    font-size: 36px;
+    text-align: center;
+    padding-right: 0;
+  }
+
+  #p1 {
+    font-size: 16px;
+    text-align: center;
+    padding-left: 10px;
+  }
+}
+
+/* For screens 480px or smaller (Small Mobiles) */
+@media (max-width: 480px) {
+  .no1 {
+    height: 300px;
+  }
+
+  #ho {
+    font-size: 28px;
+    text-align: center;
+    padding-right: 0;
+  }
+
+  #p1 {
+    font-size: 14px;
+    text-align: center;
+    padding-left: 10px;
+  }
+}
+
+/* For the Card Deck (Responsive Cards) */
+.card-deck {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card {
+  flex: 1 1 30%; /* Default for large screens */
+  border-radius: 30px;
+}
+
+.card-img-top {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.card-hover:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+/* For screens smaller than 768px (Tablets and Mobile) */
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 45%; /* Cards take up 45% width */
+  }
+}
+
+/* For screens smaller than 480px (Mobile) */
+@media (max-width: 480px) {
+  .card {
+    flex: 1 1 100%; /* Cards take full width on mobile */
+  }
+}

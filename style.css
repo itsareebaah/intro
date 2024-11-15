@@ -1,0 +1,7 @@
+.btn-primary{
+    background: linear-gradient(45deg,black,violet);
+    border-radius: 50px;
+}
+.bg-light{
+    background: linear-gradient(45deg, maroon, deeppink);
+}
