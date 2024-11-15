@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mdb.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .card-hover:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+            transition: transform 0.3s;
+        }
+
+        .breadcrumb {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+        }
+
+        .card-deck .card {
+            transition: transform 0.3s ease-in-out;
+            margin-bottom: 20px;
+        }
+
+        .card-deck .card:hover {
+            transform: scale(1.05);
+        }
+
+        .container {
+            max-width: 1200px;
+        }
+
+        section {
+            padding: 20px 0;
+        }
+
+        .rounded-circle {
+            border: 4px solid #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="background-image: url('images.jpeg'); background-repeat: no-repeat; background-size: cover; min-height: 100vh;">
+        <script src="bootstrapjs.js"></script>
+        <script src="jquery.js"></script>
+        <script src="popper.js"></script>
+        <script src="mdbjs.js"></script>
+
+        <nav aria-label="breadcrumb" class="py-3">
+            <ol class="breadcrumb container">
+                <li class="breadcrumb-item"><a href="index.html">HOME</a></li>
+                <li class="breadcrumb-item active" aria-current="page">ABOUT</li>
+            </ol>
+        </nav>
+
+        <section class="container my-5" id="s0">
+            <div class="row align-items-center text-center text-md-start">
+                <div class="col-md-4 col-12 mb-4">
+                    <img src="girl.jpg" alt="Profile Picture" class="rounded-circle img-fluid shadow" style="width: 200px; height: 200px;">
+                </div>
+                <div class="col-md-8 col-12">
+                    <div class="card-hover p-4" style="background-color: rgba(241, 217, 221, 0.9); border-radius: 10px;">
+                        <h2 class="mb-3">Hello, I'm Areeba Ahmad</h2>
+                        <p>I'm a passionate web developer, learning HTML, CSS, JavaScript, and modern web frameworks. I enjoy creating responsive and user-friendly websites that solve real-world problems and provide a seamless user experience. Currently, I'm working on improving my skills in front-end development and exploring new technologies.</p>
+                        <p>In my free time, I enjoy photography, reading, and coding challenges. Feel free to check out my projects and get in touch if you'd like to collaborate!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+        <section id="s1">
+            <div class="container" style="margin-top: 70px;">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card-hover card h-100" style="border-radius: 20px;">
+                            <img class="card-img-top" src="Qatar.jpg" alt="Travelling" style="border-top-left-radius: 20px; border-top-right-radius: 20px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Travelling</h5>
+                                <p class="card-text">Exploring new places and cultures brings me joy and inspiration.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card-hover card h-100" style="border-radius: 20px;">
+                            <img class="card-img-top" src="art.jpg" alt="Painting" style="border-top-left-radius: 20px; border-top-right-radius: 20px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Painting</h5>
+                                <p class="card-text">Expressing creativity through colors and strokes.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card-hover card h-100" style="border-radius: 20px;">
+                            <img class="card-img-top" src="baking.webp" alt="Baking" style="border-top-left-radius: 20px; border-top-right-radius: 20px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Baking</h5>
+                                <p class="card-text">Crafting delicious treats to share with loved ones.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card-hover card h-100" style="border-radius: 20px;">
+                            <img class="card-img-top" src="photo.webp" alt="Photography" style="border-top-left-radius: 20px; border-top-right-radius: 20px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Photography</h5>
+                                <p class="card-text">Capturing moments and perspectives through the lens.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+</body>
+
+</html>
